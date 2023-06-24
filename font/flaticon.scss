@@ -1,0 +1,81 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e06f31a85921738637353bbaf47f435d") format("truetype"),
+url("./flaticon.woff?e06f31a85921738637353bbaf47f435d") format("woff"),
+url("./flaticon.woff2?e06f31a85921738637353bbaf47f435d") format("woff2"),
+url("./flaticon.eot?e06f31a85921738637353bbaf47f435d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e06f31a85921738637353bbaf47f435d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "left-chevron": "\f101",
+    "play-button": "\f102",
+    "link": "\f103",
+    "pencil": "\f104",
+    "layers": "\f105",
+    "black-settings-button": "\f106",
+    "open-file-button": "\f107",
+    "loupe": "\f108",
+    "right-chevron": "\f109",
+    "friends": "\f10a",
+    "coffee-cup": "\f10b",
+    "chat-comment-oval-speech-bubble-with-text-lines": "\f10c",
+    "heart": "\f10d",
+    "dinner": "\f10e",
+);
+
+.flaticon-left-chevron:before {
+    content: map-get($flaticon-map, "left-chevron");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-link:before {
+    content: map-get($flaticon-map, "link");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-black-settings-button:before {
+    content: map-get($flaticon-map, "black-settings-button");
+}
+.flaticon-open-file-button:before {
+    content: map-get($flaticon-map, "open-file-button");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-right-chevron:before {
+    content: map-get($flaticon-map, "right-chevron");
+}
+.flaticon-friends:before {
+    content: map-get($flaticon-map, "friends");
+}
+.flaticon-coffee-cup:before {
+    content: map-get($flaticon-map, "coffee-cup");
+}
+.flaticon-chat-comment-oval-speech-bubble-with-text-lines:before {
+    content: map-get($flaticon-map, "chat-comment-oval-speech-bubble-with-text-lines");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-dinner:before {
+    content: map-get($flaticon-map, "dinner");
+}
